@@ -74,6 +74,14 @@ section.hero {
     position: relative;
 }
 
+.hero > h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 9rem;
+    min-width: 220px;
+    width: 70%;
+}
+
 .hero .bg-wrapper {
     position: absolute;
     background: url(img/hero-bg-xl.png);
@@ -87,7 +95,7 @@ section.hero {
 }
 
 .hero .actions {
-    margin-top: 6.5rem;
+    margin-top: 4rem;
 }
 
 .actions .input-container {
@@ -105,12 +113,33 @@ section.hero {
     box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
 }
 
-.hero > h3 {
-    font-size: 2rem;
+.actions input::placeholder {
+    color: darkgrey;
+}
+
+.input-container svg {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.actions .buttons-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.buttons-container button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0 5rem;
+    height: 64px;
+    border-radius: 8px;
+    font-size: 0.9rem;
     font-weight: 300;
-    margin-top: 9rem;
-    min-width: 220px;
-    width: 70%;
+    cursor: pointer;
 }
 /* ---------HERO SECTION END--------- */
 
