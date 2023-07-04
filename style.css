@@ -1,3 +1,12 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* VARIABLE */
+:root {
+    --primary: #D70F64;
+    --gray: rgba(128,128,128,0.208);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +15,68 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav.active {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+}
+
+nav > .logo {
+    color: var(--primary);
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+nav > svg {
+    cursor: pointer;
+}
+
+nav > .logo > svg {
+    margin-right: 0.3rem;
+    display: none;
+}
+
+nav .login-btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    border-right: 1px solid var(--gray);
+    border-left: 1px solid var(--gray);
+    padding: 0.6rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.login-btn span {
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    nav > .logo > svg {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    nav > .profile-icon-medium {
+        display: none;
+    }
+
+    nav .login-btn {
+        display: inline-flex;
+    }
 }
