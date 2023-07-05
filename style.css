@@ -15,6 +15,7 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 .max-w-xl {
@@ -143,6 +144,49 @@ section.hero {
 }
 /* ---------HERO SECTION END--------- */
 
+/* ---------PARTNERS SECTION--------- */
+.partners {
+    margin: 4rem 0;
+}
+
+.partners .backdrop-text {
+    padding: 0 2rem;
+}
+
+.partners .caption {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.partners .background-image {
+    background: url(img/partner-bg.png);
+    min-height: 280px;
+    background-size: cover;
+    height: 100%;
+}
+
+.partners .content {
+    border: 2px solid black;
+    background-color: white;
+    margin: 0 1rem;
+    margin-top: -4rem;
+    padding: 1rem 2rem;
+}
+
+.content p {
+
+}
+
+.content .header-text {
+
+}
+
+.content button {
+
+}
+/* ---------PARTNERS SECTION END--------- */
+
 /* ---------MEDIA QUERIES FOR MOBILE--------- */
 @media screen and (min-width: 768px) {
     nav > .logo > svg {
@@ -194,6 +238,7 @@ section.hero {
     }
 }
 
+/* ---------MEDIA QUERIES FOR BIG SCREEN--------- */
 @media screen and (min-width: 1264px) {
     .hero .bg-wrapper {
         max-height: 500px;
@@ -204,6 +249,7 @@ section.hero {
     }
 }
 
+/* ---------MEDIA QUERIES FOR FULL SCREEN--------- */
 @media screen and (min-width: 1440px) {
     .hero .bg-wrapper {
         max-height: 550px;
