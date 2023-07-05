@@ -328,6 +328,25 @@ section.hero {
   }
 /* ---------APP SECTION END--------- */
 
+/* ---------OFFICE SECTION--------- */
+.office {
+    margin-top: 10rem;
+  }
+  
+  .office .background-image {
+    background: url("./images/office-bg.png");
+    min-height: 280px;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .office .content {
+    margin-top: -10rem !important;
+  }
+/* ---------OFFICE SECTION END--------- */
+
 
 /* ---------MEDIA QUERIES FOR MOBILE--------- */
 @media screen and (min-width: 768px) {
