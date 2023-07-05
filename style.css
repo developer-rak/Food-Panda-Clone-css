@@ -171,6 +171,7 @@ section.hero {
     background: url(img/partner-bg.png);
     min-height: 280px;
     background-size: cover;
+    background-position: center;
     height: 100%;
     z-index: -1;
 }
@@ -244,6 +245,38 @@ section.hero {
     section.hero {
         padding: 0 3rem;
     }
+
+    /* PARTNERS SECTION */
+    .partners .backdrop-text {
+        padding: 0 3rem;
+    }
+
+    .partners .caption {
+        padding: 0 3rem;
+    }
+
+    .partners .background-image {
+        min-height: 404px;
+    }
+
+    .partners .content {
+        margin: 0 3rem;
+        margin-top: -20rem;
+        max-width: 350px;
+        padding: 2rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+
+    .content .header-text {
+        font-size: 1.5rem;
+    }
+
+    .content .button {
+        font-size: 1rem;
+    }
 }
 
 /* ---------MEDIA QUERIES FOR TABLET--------- */
@@ -259,6 +292,11 @@ section.hero {
     .hero .bg-wrapper {
         max-width: 400px;
     }
+
+    /* PARTNERS SECTION */
+    .partners .content {
+        max-width: 450px;
+    }
 }
 
 /* ---------MEDIA QUERIES FOR BIG SCREEN--------- */
@@ -269,6 +307,31 @@ section.hero {
 
     .hero h3 {
         font-size: 2.8rem;
+    }
+
+    /* PARTNERS SECTION */
+    .partners .content {
+        max-width: 600px;
+        text-align: right;
+    }
+
+    .content button {
+        max-width: 240px;
+        margin-top: 2rem;
+    }
+
+    .content p {
+        text-align: left;
+    }
+
+    .partners .backdrop-text {
+        font-size: 10rem;
+        top: -130px;
+        left: -30px;
+    }
+
+    .partners .caption {
+        font-size: 1.5rem;
     }
 }
 
