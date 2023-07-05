@@ -21,6 +21,7 @@ body {
 .max-w-xl {
     max-width: 1300px;
     margin: 0 auto;
+    position: relative;
 }
 
 nav {
@@ -133,7 +134,6 @@ section.hero {
     background-color: var(--primary);
     color: white;
     border: none;
-    padding: 0 5rem;
     margin-top: 1rem;
     height: 64px;
     width: 100%;
@@ -147,10 +147,18 @@ section.hero {
 /* ---------PARTNERS SECTION--------- */
 .partners {
     margin: 4rem 0;
+    position: relative;
 }
 
 .partners .backdrop-text {
     padding: 0 2rem;
+    font-size: 4.5rem;
+    color: rgba(188,186,186,0.12);
+    font-weight: 900;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    z-index: -2;
 }
 
 .partners .caption {
@@ -164,26 +172,41 @@ section.hero {
     min-height: 280px;
     background-size: cover;
     height: 100%;
+    z-index: -1;
 }
 
 .partners .content {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     background-color: white;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 12%);
     margin: 0 1rem;
     margin-top: -4rem;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 .content p {
-
+    font-size: 0.9rem;
+    color: rgb(176,174,174);
 }
 
 .content .header-text {
-
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: rgb(18,17,17);
 }
 
 .content button {
-
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0 5rem;
+    margin-top: 1rem;
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 300;
+    cursor: pointer;
 }
 /* ---------PARTNERS SECTION END--------- */
 
