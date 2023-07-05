@@ -334,7 +334,7 @@ section.hero {
   }
   
   .office .background-image {
-    background: url("./images/office-bg.png");
+    background: url(img/office-bg.png);
     min-height: 280px;
     background-size: cover;
     height: 100%;
@@ -351,124 +351,200 @@ section.hero {
 /* ---------MEDIA QUERIES FOR MOBILE--------- */
 @media screen and (min-width: 768px) {
     nav > .logo > svg {
-        display: inline;
+      display: inline;
     }
-
-    .hero .actions {
-        background-color: white;
-        box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
-        display: flex;
-        padding: 1rem;
-        max-width: 960px;
-    }
-
-    .actions input {
-        box-shadow: none;
-    }
-
-    .actions .input-container {
-        width: 80%;
-    }
-
-    .actions button {
-        margin: 0;
-        width: 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 1rem;
-    }
-
+  
     section.hero {
-        padding: 0 3rem;
+      padding: 0 2rem;
     }
-
+  
+    .hero .bg-wrapper {
+      max-height: 900px;
+    }
+  
+    .hero .actions {
+      background-color: white;
+      box-shadow: 0 0.3rem 2rem rgb(0 0 0 /10%);
+      display: flex;
+      padding: 1rem;
+      max-width: 960px;
+    }
+  
+    .actions input {
+      box-shadow: none;
+    }
+  
+    .actions .input-container {
+      width: 80%;
+    }
+  
+    .actions button {
+      margin: 0;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 1rem;
+    }
+  
     /* PARTNERS SECTION */
     .partners .backdrop-text {
-        padding: 0 3rem;
+      padding: 0 3rem;
     }
-
+  
     .partners .caption {
-        padding: 0 3rem;
+      padding: 0 3rem;
     }
-
+  
     .partners .background-image {
-        min-height: 404px;
+      min-height: 404px;
     }
-
+  
     .partners .content {
-        margin: 0 3rem;
-        margin-top: -20rem;
-        max-width: 350px;
-        padding: 2rem;
+      margin: 0 3rem;
+      margin-top: -20rem;
+      max-width: 350px;
+      padding: 2rem;
     }
-
+  
     .content p {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-
+  
     .content .header-text {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-
+  
     .content .button {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-}
+  
+    /* APP */
+    .app .container {
+      min-height: 314px;
+    }
+  
+    .app .caption {
+      display: block;
+    }
+  
+    .container .max-w-xl {
+      flex-direction: row-reverse;
+    }
+  
+    .container .content-container {
+      width: 55%;
+      text-align: left;
+      margin-right: auto;
+      justify-content: flex-start;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .container .image-container {
+      width: 45%;
+      text-align: right;
+      max-height: 480px;
+    }
+  
+    .image-container img {
+      min-width: 500px;
+    }
+  
+    .content-container .sub-heading {
+      font-size: 1.8rem;
+    }
+  
+    .content-container .buttons-container {
+      margin-top: 1rem;
+    }
+  }
 
 /* ---------MEDIA QUERIES FOR TABLET--------- */
 @media screen and (min-width: 960px) {
     nav > .profile-icon-medium {
-        display: none;
+      display: none;
     }
-
+  
     nav .login-btn {
-        display: inline-flex;
+      display: inline-flex;
     }
-
+  
     .hero .bg-wrapper {
-        max-width: 400px;
+      max-height: 400px;
     }
-
+  
     /* PARTNERS SECTION */
     .partners .content {
-        max-width: 450px;
+      max-width: 450px;
     }
-}
+  
+    /* CITIES */
+    .cities .container {
+      flex-wrap: wrap;
+      overflow: hidden;
+      justify-content: space-evenly;
+    }
+  
+    /* APP */
+    .app .container {
+      padding: 0 2rem;
+    }
+  
+    .image-container img {
+      min-width: 600px;
+    }
+  
+    .content-container .buttons-container {
+      margin-top: 2rem;
+    }
+  
+    /* LINKS */
+    .links {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .links .col {
+      align-items: start;
+      justify-content: start;
+    }
+  }
 
 /* ---------MEDIA QUERIES FOR BIG SCREEN--------- */
 @media screen and (min-width: 1264px) {
     .hero .bg-wrapper {
-        max-height: 500px;
+      max-height: 500px;
     }
-
+  
     .hero h3 {
-        font-size: 2.8rem;
+      font-size: 2.8rem;
     }
-
+  
     /* PARTNERS SECTION */
     .partners .content {
-        max-width: 600px;
-        text-align: right;
+      max-width: 600px;
+      text-align: right;
     }
-
+  
     .content button {
-        max-width: 240px;
-        margin-top: 2rem;
+      max-width: 240px;
+      margin-top: 2rem;
     }
-
+  
     .content p {
-        text-align: left;
+      text-align: left;
     }
-
+  
     .partners .backdrop-text {
-        font-size: 10rem;
-        top: -130px;
-        left: -30px;
+      font-size: 10rem;
+      top: -130px;
+      left: -40px;
     }
-
+  
     .partners .caption {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
 }
 
