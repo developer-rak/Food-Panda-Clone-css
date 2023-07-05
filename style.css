@@ -193,3 +193,19 @@ section.hero {
         max-width: 400px;
     }
 }
+
+@media screen and (min-width: 1264px) {
+    .hero .bg-wrapper {
+        max-height: 500px;
+    }
+
+    .hero h3 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero .bg-wrapper {
+        max-height: 550px;
+    }
+}
